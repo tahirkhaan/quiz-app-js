@@ -1,5 +1,5 @@
 function populate() {
-	if (quiz.isEnded()) {
+	if(quiz.isEnded()) {
 		//showScores();
 	}
 	else {
@@ -8,12 +8,12 @@ function populate() {
 		element.innerHTML = quiz.getQuestionIndex() .text;
 
 		//Show choices
-		var_choices = quiz.getQuestionIndex() .choices;
+		/*var_choices = quiz.getQuestionIndex() .choices;
 		for (var i = 0; i < choices.length; i++) {
 
 			var element = document.getElementById("choice" + i);
 			element.innerHTML = choices[i];
-		}
+		}*/ 
 	}
 }
 

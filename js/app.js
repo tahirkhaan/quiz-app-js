@@ -4,7 +4,7 @@ function populate() {
 	}
 	else {
 		//show question
-		var element = document.getElementById("questions");
+		var element = document.getElementById("question");
 		element.innerHTML = quiz.getQuestionIndex() .text;
 
 		//Show choices
@@ -19,10 +19,10 @@ function populate() {
 
 
 var questions = {
-	new Question("Which one is not an object oriebted progrming language?",["java", "c++", "c", "c#"], "c"),
-	new Question("HTML stands for?",["java", "c++", "HyperText Markup language", "c#"], "HyperText Markup language"),
-	new Question("Which language is used for styling web pages ?",["java", "css", "c", "c#"], "css"),
-	new Question("what is wordpress?",["CMS", "language", "theme", "framework"], "CMS"),
+	new Questions("Which one is not an object oriebted progrming language?",["java", "c++", "c", "c#"], "c"),
+	new Questions("HTML stands for?",["java", "c++", "HyperText Markup language", "c#"], "HyperText Markup language"),
+	new Questions("Which language is used for styling web pages ?",["java", "css", "c", "c#"], "css"),
+	new Questions("what is wordpress?",["CMS", "language", "theme", "framework"], "CMS"),
 };
 
 var quiz = new Quiz(questions);

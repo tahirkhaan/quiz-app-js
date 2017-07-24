@@ -4,8 +4,16 @@ function populate() {
 	}
 	else {
 		//show question
-		var element = document.getElementById("question");
+		var element = document.getElementById("questions");
 		element.innerHTML = quiz.getQuestionIndex() .text;
+
+		//Show choices
+		var_choices = quiz.getQuestionIndex() .choices;
+		for (var i = 0; i < choices.length; i++) {
+
+			var element = document.getElementById("choice" + i);
+			element.innerHTML = choices[i];
+		}
 	}
 }
 

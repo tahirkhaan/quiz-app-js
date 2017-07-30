@@ -17,13 +17,13 @@ function populate() {
 	}
 }
 
-
-var questions = {
-	new Questions("Which one is not an object oriebted progrming language?",["java", "c++", "c", "c#"], "c"),
-	new Questions("HTML stands for?",["java", "c++", "HyperText Markup language", "c#"], "HyperText Markup language"),
-	new Questions("Which language is used for styling web pages ?",["java", "css", "c", "c#"], "css"),
-	new Questions("what is wordpress?",["CMS", "language", "theme", "framework"], "CMS"),
-};
+ 
+var questions = [
+	new Questions("Which one is not an object oriented progrming language?", ["java", "c++", "c", "c#"], "c");
+	new Questions("HTML stands for?", ["java", "c++", "HyperText Markup language", "c#"], "HyperText Markup language");
+	new Questions("Which language is used for styling web pages ?",["java", "css", "c", "c#"], "css");
+	new Questions("what is wordpress?",["CMS", "language", "theme", "framework"], "CMS");
+];
 
 var quiz = new Quiz(questions);
 

@@ -8,13 +8,36 @@ function populate() {
 		element.innerHTML = quiz.getQuestionIndex() .text;
 
 		//Show choices
-		/*var_choices = quiz.getQuestionIndex() .choices;
-		for (var i = 0; i < choices.length; i++) {
+		var_choices = quiz.getQuestionIndex() .choices;
+		for (var i = 0; i< choices.length; i++) {
 
 			var element = document.getElementById("choice" + i);
 			element.innerHTML = choices[i];
-		}*/ 
+			guess ("btn" + i, choices[i]);
+		}
+
+		showProgress();
+	} 
+
+};
+
+
+
+function guess(id, guess) {
+	var button = document. getElementById(id);
+	button.onclick = function () {
+		quiz.guess(guess);
+		populate();
 	}
+};
+
+
+	function showScores() {
+		var gameOverHtml = "<h1>Result</h1>";
+		gameOverHtml += "<h2 id='score'>Your Scores: " + quiz.score + "</h2>";
+	}
+
+
 }
 
  
